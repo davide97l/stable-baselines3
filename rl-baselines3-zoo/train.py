@@ -15,6 +15,9 @@ import utils.import_envs  # noqa: F401 pytype: disable=import-error
 from utils.exp_manager import ExperimentManager
 from utils.utils import ALGOS, StoreDict
 
+# Time
+from recorder import Recorder
+
 seaborn.set()
 
 if __name__ == "__main__":  # noqa: C901
@@ -194,7 +197,9 @@ if __name__ == "__main__":  # noqa: C901
 
     # Normal training
     if model is not None:
+        recorder = Recorder(task_name=str(args.algo) + '-' + str(env_id), seed=args.seed)
         exp_manager.learn(model)
+        recorder.record()
         exp_manager.save_trained_model(model)
     else:
         exp_manager.hyperparameters_optimization()
