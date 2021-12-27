@@ -5,6 +5,6 @@ algo=('sac')
 
 for a in "${algo[@]}"; do
   for s in "${seeds[@]}"; do
-      python train.py --algo "$a" --env Pendulum-v0 --stop-value -250. --seed "$s"
+      python train.py --algo "$a" --env Pendulum-v0 --stop-value=-250. --seed "$s"
   done
 done

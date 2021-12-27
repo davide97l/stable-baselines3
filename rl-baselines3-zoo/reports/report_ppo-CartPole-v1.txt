@@ -1,0 +1,5 @@
+{"start": "2021-12-27T15:11:47.309098", "task": "ppo-CartPole-v1", "seed": 1, "duration": 5.501979112625122}
+{"start": "2021-12-27T15:11:55.008314", "task": "ppo-CartPole-v1", "seed": 2, "duration": 3.145918607711792}
+{"start": "2021-12-27T15:12:00.365406", "task": "ppo-CartPole-v1", "seed": 3, "duration": 3.0381786823272705}
+{"start": "2021-12-27T15:12:05.784816", "task": "ppo-CartPole-v1", "seed": 4, "duration": 5.515167951583862}
+{"start": "2021-12-27T15:12:13.524603", "task": "ppo-CartPole-v1", "seed": 5, "duration": 5.926722288131714}
