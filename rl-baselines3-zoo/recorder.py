@@ -23,12 +23,13 @@ class Recorder():
     def add(self, key, value):
         self.extra[key] = value
 
-    def record(self):
+    def record(self, iterations):
         duration = time.time() - self.start_time
         data = {
             "start": datetime.fromtimestamp(self.start_time).isoformat(),
             "task": self.task_name,
             "seed": self.seed,
+            "iterations": iterations,
             "duration": duration
         }
         for key, value in self.extra.items():

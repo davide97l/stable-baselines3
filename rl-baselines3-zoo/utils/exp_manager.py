@@ -202,7 +202,7 @@ class ExperimentManager(object):
             kwargs["callback"] = self.callbacks
 
         try:
-            model.learn(self.n_timesteps, **kwargs)
+            return model.learn(self.n_timesteps, **kwargs)
         except KeyboardInterrupt:
             # this allows to save the model when interrupting training
             pass

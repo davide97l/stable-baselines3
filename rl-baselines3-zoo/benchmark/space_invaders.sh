@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-seeds=(1 2 3 4 5)
-algo=('dqn' 'ppo')
-
-for a in "${algo[@]}"; do
-  for s in "${seeds[@]}"; do
-      python train.py --algo "$a" --env SpaceInvadersNoFrameskip-v4 --stop-value 1000. --seed "$s"
-  done
+for s in 1 2 3 4 5; do
+  python train.py --algo ppo --env SpaceInvadersNoFrameskip-v4 --stop-value 750. --seed "$s"  -f /mnt/lustre/liudavide/log
+  python train.py --algo dqn --env SpaceInvadersNoFrameskip-v4 --stop-value 750. --seed "$s"  -f /mnt/lustre/liudavide/log
 done
