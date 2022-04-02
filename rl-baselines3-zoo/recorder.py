@@ -30,7 +30,8 @@ class Recorder():
             "task": self.task_name,
             "seed": self.seed,
             "iterations": iterations,
-            "duration": duration
+            "duration": duration,
+            "iters/sec": iterations / duration
         }
         for key, value in self.extra.items():
             data[key] = value

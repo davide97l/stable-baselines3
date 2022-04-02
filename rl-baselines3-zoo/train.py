@@ -199,7 +199,7 @@ if __name__ == "__main__":  # noqa: C901
     if model is not None:
         recorder = Recorder(task_name=str(args.algo) + '-' + str(env_id), seed=args.seed)
         exp_manager.learn(model)
-        recorder.record(None)
+        recorder.record(model._n_updates)
         exp_manager.save_trained_model(model)
     else:
         exp_manager.hyperparameters_optimization()
