@@ -1,0 +1,5 @@
+{"start": "2022-04-02T13:35:12.987778", "task": "sac-Pendulum-v0", "seed": 1, "iterations": 9899, "duration": 89.15794444084167, "iters/sec": 111.02768308625836}
+{"start": "2022-04-02T13:36:44.396845", "task": "sac-Pendulum-v0", "seed": 2, "iterations": 9899, "duration": 89.11417770385742, "iters/sec": 111.0822122254909}
+{"start": "2022-04-02T13:38:15.649382", "task": "sac-Pendulum-v0", "seed": 3, "iterations": 9899, "duration": 87.68139863014221, "iters/sec": 112.8973779462161}
+{"start": "2022-04-02T13:39:45.438075", "task": "sac-Pendulum-v0", "seed": 4, "iterations": 9899, "duration": 91.04770731925964, "iters/sec": 108.72322095150692}
+{"start": "2022-04-02T13:41:18.653819", "task": "sac-Pendulum-v0", "seed": 5, "iterations": 9899, "duration": 90.81063055992126, "iters/sec": 109.00706160682542}
