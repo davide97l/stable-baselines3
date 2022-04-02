@@ -362,7 +362,6 @@ class OffPolicyAlgorithm(BaseAlgorithm):
             )
 
             if rollout.continue_training is False:
-                print(tot_gradient_steps)
                 break
             if self.num_timesteps > 0 and self.num_timesteps > self.learning_starts:
                 # If no `gradient_steps` is specified,
@@ -372,12 +371,8 @@ class OffPolicyAlgorithm(BaseAlgorithm):
                 if gradient_steps > 0:
                     self.train(batch_size=self.batch_size, gradient_steps=gradient_steps)
                 tot_gradient_steps += gradient_steps
-                print(tot_gradient_steps)
-                input()
 
         callback.on_training_end()
-        print(tot_gradient_steps)
-
         return
 
     def train(self, gradient_steps: int, batch_size: int) -> None:
