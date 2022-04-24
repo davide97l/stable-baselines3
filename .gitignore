@@ -31,6 +31,8 @@ keys/
 
 .idea
 
+logs/
+
 .ipynb_checkpoints
 ghostdriver.log
 
@@ -46,3 +48,4 @@ src
 
 MUJOCO_LOG.TXT
 log/
+logs/
